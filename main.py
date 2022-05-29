@@ -234,8 +234,10 @@ while True:
                         window['url_1'](value[0]['url'])
                         window['label_1'](value[0]['label'])
                     elif len(value) == 2:
-                        window['url_1'](value[1]['url'])
-                        window['label_1'](value[1]['label'])
+                        window['url_1'](value[0]['url'])
+                        window['label_1'](value[0]['label'])
+                        window['url_2'](value[1]['url'])
+                        window['label_2'](value[1]['label'])
             elif key == 'start' and value:
                 window[key](True)
             else:
